@@ -24,7 +24,7 @@ public class QuestionServiceImpl implements QuestionService {
         this.dao = questionDao;
     }
 
-    public void askAnswers() {
+    public void askQuestions() {
         System.out.println("Hello give us a couple of answers");
         Scanner sc = new Scanner(System.in);
         String answer;
@@ -34,11 +34,15 @@ public class QuestionServiceImpl implements QuestionService {
             answer = sc.nextLine();
             answers.add(answer);
         }
-        sc.close();
+        //sc.close();
     }
 
     public void showAnswers() {
         System.out.println("test result: ");
         System.out.println(answers);
+    }
+
+    public void clearAnswers() {
+        answers.clear();
     }
 }

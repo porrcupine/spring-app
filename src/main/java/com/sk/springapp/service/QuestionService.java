@@ -4,7 +4,9 @@ package com.sk.springapp.service;
  * @author Sergey Kuzhel
  */
 public interface QuestionService {
-    void askAnswers();
+    void askQuestions();
 
     void showAnswers();
+
+    void clearAnswers();
 }
